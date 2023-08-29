@@ -76,6 +76,15 @@ body {
   /* bottom: 0px; */
   z-index: -1; /* width: 100%; */
 }
+.page1 img.nature {
+  z-index: -2;
+  position: absolute;
+  left: -50px;
+  height: 600px;
+  min-width: 100vw;
+  bottom: -70px;
+  display: none;
+}
 .page1 .content .buttons {
   position: absolute;
   display: flex;
@@ -168,7 +177,55 @@ body {
   object-position: top;
   left: -40px;
   position: relative;
+  display: none;
 }
+/* Sidemenu */
+.sidemenu {
+  width: calc(100% - 0px);
+  height: calc(100vh - 0px);
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  left: -100%;
+  /* background: #22222290; */
+  transition: all 0.5s ease;
+}
+.sidemenu .display {
+  width: calc(70% - 40px);
+  height: calc(100% - 40px);
+  padding: 20px;
+  background: #313131;
+  position: relative;
+}
+.sidemenu .display .header {
+  border-bottom: 1px solid white;
+}
+.sidemenu .display .header i {
+  font-size: 35px;
+  display: block;
+  margin-bottom: 20px;
+}
+.sidemenu .display .content a {
+  display: block;
+  text-decoration: none;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: left;
+}
+.sidemenu .display .footer {
+  position: absolute;
+  bottom: 0;
+  font-family: Monospace;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Additional */
 
 .underline {
   position: relative;
@@ -188,6 +245,9 @@ body {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* TABLETS */
   .topbar.mobile {
+    display: none;
+  }
+  .sidemenu {
     display: none;
   }
 }
