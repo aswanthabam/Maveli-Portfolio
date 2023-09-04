@@ -8,6 +8,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/activities-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,14 +29,12 @@
           <h2>Maveli ka HUKKUM!</h2>
         </div>
         <div class="content">
-          <a href="#">Home</a>
-          <a href="#">About Me</a>
-          <a href="#">Projects</a>
-          <a href="#">TimeLine</a>
+          <a href="">Home</a>
+          <a href="./about.html">About Me</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contact</a>
         </div>
-        <div class="footer">
-          aswanth.vc © 2023
-        </div>
+        <div class="footer">aswanth.vc © 2023</div>
       </div>
     </div>
     <div class="main">
@@ -55,10 +54,30 @@
       </div>
       <div class="topbar desktop">
         <!-- Top Bar  MOBILE -->
+        <div class="links">
+          <a href="">Home</a>
+          <a href="./about.html">About Me</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="community-icons">
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+        </div>
       </div>
       <div class="page page1">
         <div class="content">
           <!-- Content -->
+          <div class="buttons desktop">
+            <a href="#about"><i class="bi bi-person"></i> Me </a>
+            <a href="#services"><i class="bi bi-collection"></i> Services</a>
+            <a href="#timeline"
+              ><i class="bi bi-calendar-week"></i> Activities
+            </a>
+            <a href="#contact"><i class="bi bi-chat"></i> Contact</a>
+          </div>
           <div class="headline">
             <div class="intro">
               <span class="intro1">Namaskaram!</span>
@@ -66,24 +85,23 @@
             </div>
 
             <h2>Mahabali</h2>
-            <span class="caption">"The Undercover Agent"</span>
+            <span class="caption">"The Underground Agent"</span>
           </div>
-          <div class="buttons">
-            <a href="#"><i class="bi bi-person-fill"></i></a>
-            <a href="#"><i class="bi bi-camera-video-fill"></i></a>
-            <a href="#"><i class="bi bi-calendar-week"></i></a>
-            <a href="#"><i class="bx bxs-chat"></i></a>
+          <div class="buttons mobile">
+            <a href="#about"><i class="bi bi-person"></i> </a>
+            <a href="#services"><i class="bi bi-collection"></i></a>
+            <a href="#timeline"><i class="bi bi-calendar-week"></i></a>
+            <a href="#contact"><i class="bi bi-chat"></i></a>
           </div>
           <img
             src="./public/maveli_mahabali_png_image_by_anulubi_dd4pwbk-414w-2x.png"
             alt="Maveli"
             class="maveli"
           />
-          
         </div>
-        <img class="nature" src="./public/nature.png"/>
+        <img class="nature" src="./public/nature.png" />
       </div>
-      <div class="page2">
+      <div id="about" class="page2">
         <div class="content">
           <h2 class="underline">About Me</h2>
           <p>
@@ -95,14 +113,314 @@
             the cherished Onam festival—a celebration embodying selflessness and
             unity. In today's rapidly changing world, where divisions often
             overshadow connections, my story serves as a poignant reminder of
-            the power of empathy and shared values. As you journey through this
-            digital realm, I hope my legacy ignites a spark within you—an
-            unwavering flame of compassion and unity that illuminates your path.
-            With heartfelt sincerity, Maveli
+            the power of empathy and shared values.
           </p>
         </div>
 
-        <img src="./public/onam2.png" class="onam" />
+        <!-- <img src="./public/onam2.png" class="onam" /> -->
+      </div>
+      <div id="services" class="page3">
+        <h2 class="underline title-style">ENTE SEVANANGAL / MY SERVICES</h2>
+        <div class="container">
+          <div class="item">
+            <div class="image">
+              <img src="./public/maveli/3.jpg" />
+            </div>
+            <div class="content">
+              <h2 class="title">Overseeing operations</h2>
+              <p>
+                "Directing operations is another facet of my role, ensuring that
+                the intricate workings of our domain are orchestrated
+                seamlessly. While my primary mantle is that of a sovereign, the
+                art of managing operations allows me to synchronize processes
+                with the same precision and care that I applied to governing my
+                kingdom. It's a harmonious blend of tradition and modernity,
+                where I infuse contemporary operational strategies with the
+                timeless principles of unity and efficiency that have always
+                guided my path."
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img src="./public/maveli/1.jpg" />
+            </div>
+            <div class="content">
+              <h2 class="title">UI/UX Designing</h2>
+              <p>
+                "I also dabble in the art of UI/UX design, crafting digital
+                experiences that harmonize with the needs and desires of the
+                user. While my primary role might be that of a king, my passion
+                for design allows me to create interfaces that resonate with the
+                same sense of unity and clarity that I sought to foster in my
+                realm. It's an opportunity to bridge the past and present,
+                infusing modern design principles with the timeless values of
+                compassion and empathy that I hold dear."
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img src="./public/maveli/5.jpg" />
+            </div>
+            <div class="content">
+              <h2 class="title">Software Development</h2>
+              <p>
+                "Coding is another facet of my work, crafting digital solutions
+                that align with the needs and aspirations of our users. Though
+                my primary mantle may not be that of a software developer, I
+                approach coding with the same passion and dedication I bring to
+                all my endeavors. It's a harmonious blend of roles, where I
+                integrate modern development practices with the timeless
+                principles of innovation and precision to create software that
+                stands the test of time."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page4" id="timeline">
+        <div class="activities">
+          <h2 class="underline title">Timeline / Activities</h2>
+          <div class="content">
+            <div class="line-container">
+              <svg
+                class="desktop"
+                width="215"
+                height="1168"
+                viewBox="0 0 215 1166"
+                fill="none"
+                preserveAspectRatio="xMidYMax meet"
+              >
+                <path
+                  class="activities-path"
+                  d="M106.5 4.5C-112.5 134 80.4998 273.667 156 340.5C261.5 456 130 565.5 42.5 633C-59 750 80.5 853.5 156 917.5C259.5 1005.24 156 1108 106.5 1162"
+                  stroke="#e1a00299"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                ></path>
+                <circle
+                  class="circle1"
+                  cx="6"
+                  cy="132"
+                  r="10"
+                  fill="#e1a002"
+                ></circle>
+                <circle
+                  class="circle2"
+                  cx="195"
+                  cy="422"
+                  r="10"
+                  fill="#e1a002"
+                ></circle>
+                <circle
+                  class="circle3"
+                  cx="8"
+                  cy="708"
+                  r="10"
+                  fill="#e1a002"
+                ></circle>
+                <circle
+                  class="circle4"
+                  cx="200"
+                  cy="1006"
+                  r="10"
+                  fill="#e1a002"
+                ></circle></svg
+              ><svg
+                class="mobile"
+                width="100%"
+                height="auto"
+                viewBox="0 0 332 1108"
+                fill="none"
+                preserveAspectRatio="xMinYMin meet"
+              >
+                <path
+                  class="activities-path"
+                  d="M6.5 0C6.5 230.5 6.5 259.5 52 259.5C253.5 259.5 301.5 248.5 301.5 291C301.5 479.4 301.5 529.5 253.5 529.5C55.9 529.5 6.5 526.5 6.5 582C6.5 795.451 6.5 776.5 52 799.5C253.5 799.5 299 791 301.5 852C301.5 1036 301.5 1065.5 253.5 1065.5C126.5 1065.5 129 1063.5 129 1107.5"
+                  stroke="#e1a00299"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                  style="
+                    stroke-dasharray: 1996.02, 1996.02;
+                    stroke-dashoffset: 0;
+                  "
+                ></path>
+                <circle
+                  class="circle1"
+                  cx="7"
+                  cy="115"
+                  r="10"
+                  fill="#e1a002"
+                  style="opacity: 1"
+                ></circle>
+                <circle
+                  class="circle2"
+                  cx="302"
+                  cy="395"
+                  r="10"
+                  fill="#e1a002"
+                  style="opacity: 1"
+                ></circle>
+                <circle
+                  class="circle3"
+                  cx="7"
+                  cy="665"
+                  r="10"
+                  fill="#e1a002"
+                  style="opacity: 1"
+                ></circle>
+                <circle
+                  class="circle4"
+                  cx="302"
+                  cy="935"
+                  r="10"
+                  fill="#e1a002"
+                  style="opacity: 1"
+                ></circle>
+              </svg>
+            </div>
+            <div class="activities-container desktop">
+              <div class="left">
+                <div class="activity-none"></div>
+                <div class="activity activity2">
+                  <span class="date">20-16-1100 BC</span
+                  ><span class="title">Went to Underground!</span
+                  ><span class="description"
+                    >I ventured deep into the earth's core, a journey that
+                    bestowed upon me invaluable experiences. It was in the
+                    depths that I learned the art of resilience in the face of
+                    adversity, and the enduring power of sacrifice. These
+                    profound experiences continue to guide me in my endeavors,
+                    reminding me of the strength found in the most unexpected
+                    places.
+                  </span>
+                </div>
+                <div class="activity-none"></div>
+                <div class="activity activity4">
+                  <span class="date">23-10-2023</span
+                  ><span class="title">Joined MuLearn </span
+                  ><span class="description"
+                    >I became a part of the Mulearn community, a vibrant
+                    peer-to-peer learning network. This experience allowed me to
+                    refine skills such as problem-solving, and gaining diverse
+                    insights from fellow learners. Through this collective
+                    effort, I broadened my horizons and honed my abilities,
+                    fostering a sense of connection and knowledge-sharing</span
+                  >
+                </div>
+              </div>
+              <div class="right">
+                <div class="activity activity1">
+                  <span class="date">20-16-1000 BC</span
+                  ><span class="title">Kerala's Royal Power</span
+                  ><span class="description"
+                    >As the former king of Kerala, my reign honed skills in
+                    leadership, compassion, and justice. Today, I apply these
+                    strengths in my leadership qualities. My journey as a ruler
+                    continues to inspire my path.
+                  </span>
+                </div>
+                <div class="activity-none"></div>
+                <div class="activity activity3">
+                  <span class="date">04-05-2020</span
+                  ><span class="title">Mastered coding.</span
+                  ><span class="description"
+                    >I enrolled in an online coding course and embarked on a
+                    transformative journey. Through dedicated effort and
+                    practice, I acquired essential coding skills, including
+                    proficiency in multiple programming languages, web
+                    development expertise, and UI/UX. This newfound expertise
+                    has empowered me to take on complex digital challenges and
+                    create innovative solutions.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="activities-container mobile">
+              <div class="activity activity1" style="opacity: 1">
+                <span class="date">20-16-1000 BC</span
+                ><span class="title">Kerala's Royal Power</span
+                ><span class="description"
+                  >As the former king of Kerala, my reign honed skills in
+                  leadership, compassion, and justice. Today, I apply these
+                  strengths in my leadership qualities. My journey as a ruler
+                  continues to inspire my path.
+                </span>
+              </div>
+              <div class="activity activity2" style="opacity: 1">
+                <span class="date">20-16-1100 BC</span
+                ><span class="title">Went to Underground!</span
+                ><span class="description"
+                  >I ventured deep into the earth's core, a journey that
+                  bestowed upon me invaluable experiences. It was in the depths
+                  that I learned the art of resilience in the face of adversity,
+                  and the enduring power of sacrifice. These profound
+                  experiences continue to guide me in my endeavors, reminding me
+                  of the strength found in the most unexpected places.
+                </span>
+              </div>
+              <div class="activity activity3" style="opacity: 1">
+                <span class="date">04-05-2020</span
+                ><span class="title">Mastered coding.</span
+                ><span class="description"
+                  >I enrolled in an online coding course and embarked on a
+                  transformative journey. Through dedicated effort and practice,
+                  I acquired essential coding skills, including proficiency in
+                  multiple programming languages, web development, and UI/UX.
+                  This newfound expertise has empowered me to take on complex
+                  digital challenges and create innovative solutions.</span
+                >
+              </div>
+              <div class="activity activity4" style="opacity: 1">
+                <span class="date">23-10-2023</span
+                ><span class="title">Joined MuLearn </span
+                ><span class="description"
+                  >I became a part of the Mulearn community, a vibrant
+                  peer-to-peer learning network. This experience allowed me to
+                  refine skills such as problem-solving, and gaining diverse
+                  insights from fellow learners. Through this collective effort,
+                  I broadened my horizons and honed my abilities, fostering a
+                  sense of connection and knowledge-sharing</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page5" id="contact">
+        <h2 class="title-style underline">Contact Options</h2>
+        <div class="content">
+          <div class="item">
+            <i class="bx bx-phone"></i>
+            <span>Phone</span>
+          </div>
+          <div class="item">
+            <i class="bx bxl-whatsapp"></i>
+            <span>Whatsapp</span>
+          </div>
+          <div class="item">
+            <i class="bx bx-envelope"></i>
+            <span>E-Mail</span>
+          </div>
+          <div class="item">
+            <i class="bx bxl-instagram"></i>
+            <span>Instagram</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="left">
+          <a href="https://github.com/aswanthabam">Github Profile</a>
+          <a href="https://mulearn.org">MuLearn</a>
+          <a href="">Join community</a>
+          <a href="">Book tickets to paathaalam!</a>
+        </div>
+        <div class="right">
+          <img src="./public/maveli/1.jpg" />
+        </div>
       </div>
     </div>
     <script type="module" src="./assets/main.js"></script>
