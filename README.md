@@ -4,7 +4,7 @@ Portfolio for Maveli Competition by MuLearn
 
 - Name : Aswanth V C  
 - Hosting Provider: GitHub  
-- Hosted URL : https://github.com/aswanthabam/Maveli-Portfolio
+- Hosted URL : https://aswanthabam.github.io/Maveli-Portfolio/
 
 NB:
 - The design is better viewed and **Optimised for MOBILE VIEW**
