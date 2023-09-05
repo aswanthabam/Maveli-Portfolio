@@ -1,4 +1,5 @@
 import "./style.css";
+try {
 var width = window.screen.width;
 let path =
   width > 767
@@ -8,6 +9,7 @@ let pathLength = path.getTotalLength();
 
 path.style.strokeDasharray = pathLength + " " + pathLength;
 path.style.strokeDashoffset = pathLength;
+}catch (e) {}
 document.getElementById("menu-btn").onclick = function () {
   document.getElementsByClassName("sidemenu")[0].style.left = "0px";
 };
@@ -22,6 +24,7 @@ window.onscroll = (e) => {
     document.getElementsByClassName("topbar")[0].classList.remove("scrolled");
     document.getElementsByClassName("topbar")[1].classList.remove("scrolled");
   }
+  try {
   if (
     document.querySelector(".activities").getBoundingClientRect().top <=
     document.querySelector(".activities").getBoundingClientRect().height / 5
@@ -118,4 +121,5 @@ window.onscroll = (e) => {
       ).style.opacity = 0;
     }
   }
+}catch (e) {}
 };
