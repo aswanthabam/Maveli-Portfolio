@@ -25,6 +25,7 @@ body {
   align-items: center;
   justify-content: space-between;
   /* background-color: aqua; */
+  background: #222;
   padding: 10px;
   z-index: 10;
   transition: all 0.5s ease;
@@ -289,7 +290,7 @@ body {
   margin-top: 50px;
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   gap: 20px;
 }
 .page5 .content .item {
@@ -325,7 +326,6 @@ body {
   top: 0;
   border-bottom: 1px solid white;
   margin-bottom: 10px;
-  background: url("./public/maveli/8.jpg");
   height: 25vh;
   width: 100%;
   background-size: cover;
@@ -333,6 +333,17 @@ body {
   align-items: space-between;
   justify-content: space-between;
   flex-direction: column;
+  z-index: 0;
+}
+.sidemenu .display .header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
 }
 .sidemenu .display .header i {
   font-size: 35px;
@@ -430,6 +441,9 @@ body {
   z-index: 1;
   background-color: #12121213;
 }
+.footer .hidden {
+  display: none;
+}
 /* Additional */
 
 .underline {
@@ -464,6 +478,7 @@ body {
   .topbar.desktop.scrolled {
     /* background-color: red !important; */
     height: 30px;
+    background: #e1a002;
   }
   .topbar.desktop {
     position: fixed;
@@ -474,6 +489,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #222;
   }
   .topbar.desktop .links {
     display: grid;
@@ -583,12 +599,30 @@ body {
     padding-top: 0;
   }
   .page5 {
-    padding-top: 0;
+    margin: 0;
     width: calc(100% - 200px);
-    padding: 100px;
+    padding: 0 100px;
+  }
+  .page5 h2 {
+    position: relative;
   }
   .page5 .content {
     grid-template-columns: auto auto auto auto;
+    padding: 0;
+  }
+  .footer {
+    grid-template-columns: 30% 30% 40%;
+  }
+  .footer .hidden {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .hidden h2 {
+    color: aqua;
+    font-size: 30px;
+    text-align: center;
   }
 }
 
