@@ -1,15 +1,26 @@
-import "./style.css";
-try {
+//import "./style.css";
+//try {
+function do_work(){
 var width = window.screen.width;
 let path =
   width > 767
     ? document.querySelectorAll(".activities-path")[0]
     : document.querySelectorAll(".activities-path")[1];
+//if(path != undefined && path != null) {
 let pathLength = path.getTotalLength();
 
 path.style.strokeDasharray = pathLength + " " + pathLength;
 path.style.strokeDashoffset = pathLength;
-}catch (e) {}
+//}catch (e) {alert(e)}
+//}
+}
+do_work()
+window.onload = () =>{
+  do_work()
+  alert("hi")
+}
+
+
 document.getElementById("menu-btn").onclick = function () {
   document.getElementsByClassName("sidemenu")[0].style.left = "0px";
 };
